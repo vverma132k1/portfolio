@@ -95,6 +95,10 @@
   }
   .contact-info-container {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
   }
   .contact-info-container p,
   .nav-links li a {
