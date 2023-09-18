@@ -44,9 +44,12 @@
         <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div> -->
     <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
+      <p class="section__text__p1" style="color: #FAF9F6;">Hello, I'm</p>
       <h1 class="title">VAIBHAV VERMA </h1>
-      <p class="section__text__p2">/dev-vel-uh-pur/</p>
+      <!-- <p class="section__text__p2">/dev-vel-uh-pur/</p> -->
+      <!-- here -->
+      <div class="word"></div>
+
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
           Download CV
@@ -301,16 +304,20 @@
           class="icon contact-icon email-icon"
         />
         <!-- <p><a href="">+91-9466514634</a></p> -->
-        <p><a href="javascript:void(0);" id="phoneNumber" onclick="copyToClipboard()">+91-9466514634</a></p>
+        <span class="tooltip">
+          <p><a href="javascript:void(0);" id="phoneNumber" onclick="copyToClipboard()">+91-9466514634</a></p>
+          <span class="tooltiptext">Click to copy me?</span>
+        </span>
+       
       </div>
       <div class="contact-info-container">
         <img
           src="./assets/linkedin.png"
           alt="LinkedIn icon"
           class="icon contact-icon"
+          id="linkedin"
         />
         <p><a href="https://www.linkedin.com/in/vaibhav-verma-4b4680258/" target="_blank">LinkedIn</a></p>
-
       </div>
     </div>
   </section>
@@ -329,6 +336,7 @@
     <p>Copyright &#169; 2023 Vaibhav Verma. All Rights Reserved.</p>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
 
